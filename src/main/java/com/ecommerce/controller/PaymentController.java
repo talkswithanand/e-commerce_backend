@@ -27,10 +27,10 @@ import com.razorpay.RazorpayException;
 @RestController
 @RequestMapping("/api")
 public class PaymentController {
-	@Value("{razorpay.api.key}")
+	@Value("${razorpay.api.key}")
 	String apiKey;
 
-	@Value("{razorpay.api.secret}")
+	@Value("${razorpay.api.secret}")
 	String apiSecret;
 
 	@Autowired
